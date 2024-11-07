@@ -61,6 +61,12 @@
         {
           "contactsPermission": "La aplicación necesita acceso a tus contactos."
         }
+      ],
+      [
+        "expo-barcode-scanner",
+        {
+          "cameraPermission": "La aplicación necesita acceso a la cámara para escanear códigos QR."
+        }
       ]
     ],
     "experiments": {
