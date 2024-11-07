@@ -16,7 +16,8 @@
       "supportsTablet": true,
       "infoPlist": {
         "NSCameraUsageDescription": "Esta app necesita acceso a la cámara para tomar fotos",
-        "NSPhotoLibraryUsageDescription": "Esta app necesita acceso a la galería para seleccionar fotos"
+        "NSPhotoLibraryUsageDescription": "Esta app necesita acceso a la galería para seleccionar fotos",
+        "NSContactsUsageDescription": "La aplicación necesita acceso a tus contactos para mostrarlos en la lista."
       }
     },
     "android": {
@@ -27,8 +28,13 @@
       "permissions": [
         "CAMERA",
         "READ_EXTERNAL_STORAGE",
-        "WRITE_EXTERNAL_STORAGE"
-      ]
+        "WRITE_EXTERNAL_STORAGE",
+        "INTERNET",
+        "MODIFY_AUDIO_SETTINGS",
+        "VIBRATE",
+        "READ_CONTACTS"
+      ],
+      "package": "com.yourcompany.tprnfuncionalidades"
     },
     "web": {
       "bundler": "metro",
@@ -42,6 +48,18 @@
         {
           "photosPermission": "La aplicación necesita acceso a tu galería para seleccionar imágenes.",
           "cameraPermission": "La aplicación necesita acceso a tu cámara para tomar fotos."
+        }
+      ],
+      [
+        "expo-av",
+        {
+          "microphonePermission": "Allow $(PRODUCT_NAME) to access your microphone."
+        }
+      ],
+      [
+        "expo-contacts",
+        {
+          "contactsPermission": "La aplicación necesita acceso a tus contactos."
         }
       ]
     ],
