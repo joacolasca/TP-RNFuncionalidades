@@ -32,6 +32,15 @@ export default function TabLayout() {
           ),
         }}
       />
+      <Tabs.Screen
+        name="video"
+        options={{
+          title: 'Video',
+          tabBarIcon: ({ color, focused }) => (
+            <TabBarIcon name={focused ? 'videocam' : 'videocam-outline'} color={color} />
+          ),
+        }}
+      />
     </Tabs>
   );
 }
