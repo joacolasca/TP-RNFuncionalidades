@@ -7,7 +7,7 @@ import BackgroundContainer from '@/components/BackgroundContainer';
 import { showError } from '@/utils/notifications';
 
 const TEAM_INFO = {
-  teamName: "Grupo X",
+  teamName: "Grupo Goat",
   members: [
     "Integrante 1: Tomás Lerman",
     "Integrante 2: Joaquin Lasca",
